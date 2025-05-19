@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <p>🔥 Let&apos;s get started! 🔥</p>
+      <h1 style={{ color: 'white', textAlign: 'center' }}>Time to get started!</h1>
       <Link href="/new">New Page</Link>
-      <Link href="/blog/36">Blog Post dynamic page</Link>
+      <Link href="/blog/36">Post 36</Link>
     </main>
   )
 }

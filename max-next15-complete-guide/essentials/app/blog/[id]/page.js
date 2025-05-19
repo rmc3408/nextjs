@@ -5,13 +5,13 @@
 //   return <h1>New page {id}</h1>
 // }
 
-'use client'
 
+'use client'
 import { use } from "react"
 
 export default function BlogPage(props) {
   console.log('SSR Blog id Page')
   const { id } = use(props.params)
 
-  return <h1>New page {id}</h1>
+  return <main><h1>Blog page {id}</h1></main>
 }
