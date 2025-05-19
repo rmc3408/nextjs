@@ -9,9 +9,9 @@
 'use client'
 import { use } from "react"
 
-export default function BlogPage(props) {
+export default function SlugMealPage(props) {
   console.log('SSR Blog id Page')
   const { id } = use(props.params)
 
-  return <main><h1>Blog page {id}</h1></main>
+  return <main><h1>Meal page {id}</h1></main>
 }
