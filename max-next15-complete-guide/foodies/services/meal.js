@@ -9,7 +9,7 @@ export function getMeals() {
       const meals = stmt.all()
       setTimeout(() => {
         resolve(meals)
-      }, 2000)
+      }, 200)
     } catch (error) {
       reject([])
     }
