@@ -1,5 +1,6 @@
 import ImagePicker from '@/components/meals/image-picker'
 import classes from './page.module.css'
+import { shareMealSubmit } from '@/services/actions'
 
 export default function ShareMealsPage() {
   console.log('SSR Meals/Share Page')
@@ -13,15 +14,15 @@ export default function ShareMealsPage() {
         <p>Or any other meal you feel needs sharing!</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form}>
+        <form className={classes.form} action={shareMealSubmit}>
           <div className={classes.row}>
             <p>
               <label htmlFor="name">Your name</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="creator" required />
             </p>
             <p>
               <label htmlFor="email">Your email</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="creator_email" required />
             </p>
           </div>
           <p>
